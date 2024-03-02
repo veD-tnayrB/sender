@@ -1,0 +1,21 @@
+@use 'dark';
+@use 'light';
+@import 'material-design';
+
+:root {
+	--font-family: 'Roboto', sans-serif;
+	--secondary-font-family: 'Roboto', sans-serif;
+	--border-radius-base: 8px;
+	@include light.properties();
+	@media (prefers-color-scheme: dark) {
+		@include dark.properties();
+	}
+}
+
+html[data-beyond-mode='light'] {
+	@include light.properties();
+}
+
+html[data-beyond-mode='dark'] {
+	@include dark.properties();
+}

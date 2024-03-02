@@ -1,0 +1,12 @@
+{
+	"name": "entities",
+	"ts": {
+		"path": "ts",
+		"files": ["*"]
+	},
+	"bridge": {
+		"path": "provider",
+		"files": ["*"]
+	},
+	"platforms": ["web", "backend", "android"]
+}
